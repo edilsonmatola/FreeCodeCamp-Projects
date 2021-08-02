@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey From</title>
+</head>
+
+<style>
+    
+</style>
+
+<body>
+    <div class="container">
+        <h1 id="title">Form Survey</h1>
+        <p id="description">FCC</p>
+        
+        <form action="POST" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class=form-group>
+                <label for="email" id="email-label"></label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number">Number</label>
+                <input type="number" name="number" id="number" placeholder="Enter your number" min="9" max="15" required>
+            </div>
+
+            <div class="form-group">
+                <p>What's your current role?</p>
+                <select name="role" id="dropdown" class="form-control">
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full time job</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
